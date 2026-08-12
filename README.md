@@ -2,7 +2,7 @@
 
 **Computer Vision · Video Processing · Object Segmentation · Frame-wise Tracking · Computational Geometry · Delaunay Triangulation · MATLAB**
 
-[Repository](https://github.com/javeriaz15/moving-object-segmentation-computational-geometry) · [Demo](https://github.com/javeriaz15/moving-object-segmentation-computational-geometry/blob/main/assets/demo/segmented-output.mp4)
+[Repository](https://github.com/javeriaz15/Moving-Object-Segmentation-Tracking) · [Demo](https://github.com/javeriaz15/Moving-Object-Segmentation-Tracking/tree/main/assets/demo)
 
 Developed a classical computer vision pipeline for **detecting, segmenting, and tracking moving objects across video frames**. The MATLAB implementation combines foreground extraction, morphological filtering, Canny edge detection, corner and centroid estimation, and **Delaunay triangulation** to construct an interpretable geometric representation of moving objects over time.
 
