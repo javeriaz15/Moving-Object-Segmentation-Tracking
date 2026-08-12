@@ -1,9 +1,40 @@
-### Moving Object Detection, Segmentation & Frame-wise Tracking
+# Moving Object Detection, Segmentation & Frame-wise Tracking
 
-**Computer Vision · Video Processing · Object Segmentation · Frame-wise Tracking · Computational Geometry · Delaunay Triangulation · MATLAB**
+**Classical computer vision pipeline for detecting, segmenting, and following moving objects across video frames using computational geometry.**
 
-[Repository](https://github.com/javeriaz15/Moving-Object-Segmentation-Tracking) · [Demo](https://github.com/javeriaz15/Moving-Object-Segmentation-Tracking/tree/main/assets/demo)
+This project implements a MATLAB-based video-processing pipeline that extracts moving foreground objects and constructs an interpretable geometric representation of their shape over time.
 
-Developed a classical computer vision pipeline for **detecting, segmenting, and tracking moving objects across video frames**. The MATLAB implementation combines foreground extraction, morphological filtering, Canny edge detection, corner and centroid estimation, and **Delaunay triangulation** to construct an interpretable geometric representation of moving objects over time.
+The work served as an earlier segmentation and frame-wise object-analysis approach that was later extended and refined in my M.Sc. research on temporal single and multiple moving-object recognition.
 
-The segmentation and frame-wise object-analysis approach developed in this project was later extended and refined as part of my M.Sc. research on temporal single and multiple moving-object recognition.
+---
+
+## Technical Approach
+
+The pipeline processes video frames through:
+
+```text
+Input Video
+    ↓
+Grayscale Conversion
+    ↓
+Foreground / Frame Difference
+    ↓
+Binary Foreground Mask
+    ↓
+Morphological Filtering
+    ↓
+Canny Edge Detection
+    ↓
+Boundary & Corner Extraction
+    ↓
+Centroid Estimation
+    ↓
+Seed Point Construction
+    ↓
+Delaunay Triangulation
+    ↓
+Geometric Object Segmentation
+    ↓
+Frame-wise Object Analysis
+    ↓
+Annotated Output Video
