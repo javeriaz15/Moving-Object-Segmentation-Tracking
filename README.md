@@ -1,22 +1,9 @@
-## Adaptive Computer Vision Algorithm for Real Time Moving Vehicle Detection and Segmentation
-**Project**: This project describes an adaptive learning approach to detect, segment, measure and track objects in outdoors when there is no training data by applying computation geometry, topology and engineering physics. 
-## Problem
-No training data for object detection</br>
-**Assumption**: Stationary camera at traffic signals and buildings
-## Solution
-### Adaptive Object Detection
-- Involves frame subtraction to separate background and foreground
-- background and foreground detection using Gaussian Mixture Model
-- Applying morphological operations and filters to remove noise 
-- Implementing Canny Edge detection for corner and boundary of the moving object 
-- Generating persistence graphs and barcodes to store object positions
-### Polygon Object Instance Segmentation
-- Creating a feature vector to store boundary points and centroid of moving object
-- Triangulating using boundary points and centroid to implement polygon segmentation on moving object
-- Generating graph using boundary points and centroid to store the previous positions of moving object
-### Shape Analysis for Object Classification and Recognition
-- Generating the feature vector of the moving object
-- implementing meta learning for one shot learning for object classification
-- comparing results with Siamese Neural Network
-### Object Tracking
-- Applying kalman filter for object tracking
+### Moving Object Detection, Segmentation & Frame-wise Tracking
+
+**Computer Vision · Video Processing · Object Segmentation · Frame-wise Tracking · Computational Geometry · Delaunay Triangulation · MATLAB**
+
+[Repository](https://github.com/javeriaz15/moving-object-segmentation-computational-geometry) · [Demo](https://github.com/javeriaz15/moving-object-segmentation-computational-geometry/blob/main/assets/demo/segmented-output.mp4)
+
+Developed a classical computer vision pipeline for **detecting, segmenting, and tracking moving objects across video frames**. The MATLAB implementation combines foreground extraction, morphological filtering, Canny edge detection, corner and centroid estimation, and **Delaunay triangulation** to construct an interpretable geometric representation of moving objects over time.
+
+The segmentation and frame-wise object-analysis approach developed in this project was later extended and refined as part of my M.Sc. research on temporal single and multiple moving-object recognition.
